@@ -3,9 +3,10 @@ This project recommends similar fashion items based on a user-uploaded image. It
 ## Table of Contents
 
 -  [Project Overview](#project-overview)  
--  [System Flow](#system-flow)  
+-  [System work Flow](#system-work-flow-diagram)  
 -  [How it Works](#how-it-works)  
 -  [Built With](#built-with)
+-  [Output](#output)
   
 ##  Project Overview
 
@@ -14,7 +15,7 @@ The Fashion Recommendation System is a deep learning-based project designed to s
 ## System Work Flow Diagram
 
 1. **Dataset Loading**  
-   Load the kaggle dataset to the system which contains fashion item images which serve as the base for comparison.You can download the feature extraction file from the following link [here.](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small)
+   Load the kaggle dataset to the system which contains fashion item images which serve as the base for comparison.You can download the dataset [here.](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small)
 
 2. **Feature Extraction**  
    Each image from the dataset is passed through a pre-trained ResNet50 model to extract deep feature representations.
@@ -33,5 +34,34 @@ The Fashion Recommendation System is a deep learning-based project designed to s
 
 7. **Top 5 Similar Image Recommendations**  
    The 5 images with the smallest distances to the query are returned as the most visually similar items.
+   
+**Work Flow Diagram** is given below:
+![image alt](https://github.com/Sushree-ritu23/Fashion-Recommendation-System/blob/9bbc4be5544a96fdda975982ef871ed7d7645716/fashionrecommflow.png)
+
+## How it Works
+1. The user uploads a fashion image as a query.
+2. The image is passed through a pre-trained ResNet50 model to extract deep features.
+3. The system uses pre-extracted features of dataset images stored earlier.
+4. Euclidean distance is calculated between the query and dataset features.
+5. The top 5 images with the smallest distances are returned as recommendations.
 
 
+##  Built With
+
+**Libraries & Tools**  
+- **NumPy** – For numerical operations and handling feature vectors  
+- **Pillow** – For image processing and format handling  
+- **OpenCV** – For reading, resizing, and manipulating images  
+- **Scikit-learn** – For preprocessing and utility functions  
+- **tqdm** – For progress visualization during feature extraction
+
+**Model & Technique**  
+- **ResNet50** – Pre-trained CNN model used for extracting image features  
+- **Euclidean Distance** – Used to compute similarity between the query and dataset images
+
+**Framework**  
+- **TensorFlow & Keras** – For deep learning operations and model management  
+- **Streamlit** – For building the user-friendly web interface
+
+## Output
+![video alt](
