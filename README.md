@@ -64,4 +64,4 @@ The Fashion Recommendation System is a deep learning-based project designed to s
 - **Streamlit** – For building the user-friendly web interface
 
 ## Output
-![video alt](
+![image alt](https://github.com/Sushree-ritu23/Fashion-Recommendation-System/blob/main/fashionrecommoutputi.png)
